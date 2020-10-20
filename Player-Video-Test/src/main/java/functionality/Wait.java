@@ -32,9 +32,9 @@ public class Wait {
         WebElement loginByMail = wait.until(ExpectedConditions.elementToBeClickable(By.id("login_by_email")));
         loginByMail.click();
         WebElement sendingMail = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"root\"]/div/main/div/div/div[2]/div/div/div/div[1]/div/div/form/div[1]/div/input")));
-        sendingMail.sendKeys("mateusz_narozny@tvn.pl");
+        sendingMail.sendKeys("");
         WebElement password = wait.until(ExpectedConditions.elementToBeClickable(By.id("password")));
-        password.sendKeys("Javatozlo123");
+        password.sendKeys("");
         WebElement btngoin = driver.findElement(By.id("sign_in"));
         btngoin.click();
         WebElement user = wait.until(ExpectedConditions.elementToBeClickable(By.className("missing-avatar")));
@@ -43,6 +43,5 @@ public class Wait {
         closeBtn.click();
         WebElement play = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".btnaas")));
         play.click();
-
     }
 }
