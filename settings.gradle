@@ -1,0 +1,4 @@
+rootProject.name = 'Automatyzacja_Traffic'
+include 'TVN24-VIDEO-TEST'
+include 'Player-Video-Test'
+
